@@ -47,7 +47,7 @@ const RESOURCES = {
 "/assets/fonts/Muli/Muli-Italic-VariableFont:wght.ttf": "2f6faf3a7b050dd458032c36ee82a02b",
 "/assets/AssetManifest.json": "4078e73185314c4b5419d300edebba08",
 "/index.html": "f32a0693a81073ce38d2f1c72eff1ae7",
-"/main.dart.js": "99bca124b97c0e8dbedb6839220a0977"
+"/main.dart.js": "7b194894ab64bf866d2c87e19a576610"
 };
 
 self.addEventListener('activate', function (event) {
