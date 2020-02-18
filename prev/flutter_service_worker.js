@@ -3,7 +3,7 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "/assets/FontManifest.json": "9950208c63d1742f85e889bd3d9b4a40",
 "/assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
-"/assets/LICENSE": "c6641d284e5b6f36d1a8961a8367bf76",
+"/assets/LICENSE": "7f6100510586d3f4177c5d16a099a053",
 "/assets/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf": "778e16de3b7bbf4100f31ff4d6307216",
 "/assets/fonts/Montserrat_Alternates/OFL.txt": "5da468cc0e208e63aa009460017f214a",
 "/assets/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf": "858597948628fafd5ba6d71a820cf7f6",
@@ -47,7 +47,7 @@ const RESOURCES = {
 "/assets/fonts/Muli/Muli-Italic-VariableFont:wght.ttf": "2f6faf3a7b050dd458032c36ee82a02b",
 "/assets/AssetManifest.json": "4078e73185314c4b5419d300edebba08",
 "/index.html": "f32a0693a81073ce38d2f1c72eff1ae7",
-"/main.dart.js": "99bca124b97c0e8dbedb6839220a0977"
+"/main.dart.js": "861ebecd3184eff4d21eab433108b8bf"
 };
 
 self.addEventListener('activate', function (event) {
@@ -69,9 +69,7 @@ self.addEventListener('fetch', function (event) {
         if (response) {
           return response;
         }
-        return fetch(event.request, {
-          credentials: 'include'
-        });
+        return fetch(event.request);
       })
   );
 });
